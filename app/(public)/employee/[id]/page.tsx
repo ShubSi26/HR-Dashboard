@@ -3,20 +3,19 @@ import Ratingbar from "@/components/ratingbar";
 import PastPerformance from "@/components/pastperformance";
 import TabbedProfile from "@/components/tabbs";
 
-export default function EmployeePage({ params }: { params: { id: string } }) {
-  // Convert id string param to number index (assuming zero-based index in array)
-  // If id is 1-based user ID, adjust accordingly
+export default function EmployeePage({ params }: { params:any }) {
+
   const userIndex = Number(params.id); 
-  const user = users.results[userIndex]; // your JSON has 'users' array
-  const rating = Math.floor(Math.random() * 5) + 1; // Random rating for demo purposes
+  const user = users.results[userIndex]; 
+  const rating = Math.floor(Math.random() * 5) + 1; 
 
   if (!user) {
     return <div>User not found</div>;
   }
 
-  return (<div className="flex flex-row w-full h-full">
-    <div className="w-1/3 mx-auto p-6 gap-4 flex flex-col rounded shadow">
-        <div className="flex flex-col w-fit  items-center  p-2">
+  return (<div className="flex flex-col sm:flex-row w-full h-full overflow-auto">
+    <div className="sm:w-1/3 w-full mx-auto p-6 gap-4 flex flex-col rounded shadow">
+        <div className="flex flex-col w-full justify-center items-center  p-2">
             <h1 className="text-2xl font-bold mb-4">
                 {user.name.title} {user.name.first} {user.name.last}
             </h1>
@@ -50,7 +49,7 @@ export default function EmployeePage({ params }: { params: { id: string } }) {
             <p>{user.nat}</p>
         </div>
     </div>
-    <div className="w-2/3 mx-auto p-6 gap-4 flex flex-col rounded shadow">
+    <div className="sm:w-2/3 w-full mx-auto p-6 gap-4 flex flex-col rounded shadow">
        <PastPerformance/> 
        <TabbedProfile user={user}/>
     </div>

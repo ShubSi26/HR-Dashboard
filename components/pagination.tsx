@@ -9,7 +9,7 @@ export default function Pagination({
     totalPages: number;
 }) {
     return (
-        <div className="flex items-center justify-end w-2/3 mt-4">
+        <div className="flex items-center justify-center sm:justify-end sm:w-2/3 w-full mt-4">
             <span className="text-sm text-gray-500">
                 Page {page} of {totalPages}
             </span>

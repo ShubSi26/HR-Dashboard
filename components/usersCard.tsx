@@ -28,7 +28,7 @@ export default function UsersCard() {
     if (isError)
         return <div className="flex justify-center items-center w-full h-full">Error...</div>;
 
-    return (<div className="w-2/3 min-h-11/12 h-full max-h-9/12 overflow-y-auto">
+    return (<div className="sm:w-2/3 w-full min-h-11/12 h-full max-h-9/12 overflow-y-auto">
         <motion.div
             variants={containerVariants}
             initial="hidden"

@@ -17,7 +17,7 @@ export default function userCard({ user }: { user: any }) {
     return (
         <motion.div
             variants={itemVariants}
-            className="flex flex-row justify-between items-center w-full h-full p-2"
+            className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full h-full p-2"
         >
             <div className="flex flex-row justify-center items-center w-fit h-full">
                 <img src={user.picture.large} alt="user" className="rounded-full w-14 h-14"/>
@@ -31,11 +31,14 @@ export default function userCard({ user }: { user: any }) {
                 
             </div>
 
-            <div className="flex gap-2 justify-center items-center ">
+            <div className="flex flex-row gap-2 justify-between w-full sm:w-fit sm:justify-between items-center ">
                 <span>{user.department}</span>
-                <ViewButton onClick={()=>{router.push( `/employee/${user.id}`)}}/>
-                <BookmarkButton />
-                <PromoteButton />
+                <div className="flex">
+                    <ViewButton onClick={()=>{router.push( `/employee/${user.id}`)}}/>
+                    <BookmarkButton />
+                    <PromoteButton />
+                </div>
+                
             </div>
         </motion.div>
     );

@@ -30,7 +30,7 @@ export default async function Home() {
           <SearchBar/>
         </div>
 
-        <div>
+        <div  className="hidden sm:block">
           <h1 className="text-2xl font-bold text-center"> 
             {date.toLocaleDateString("en-US", {
               weekday: "long",
@@ -41,9 +41,9 @@ export default async function Home() {
           </h1>
         </div>
       </div>
-      <div className="flex max-h-10/12">
+      <div className="flex sm:flex-row flex-col-reverse max-h-10/12">
         <UsersCard/>
-        <div className="w-1/3 h-full p-2">
+        <div className="sm:w-1/3 w-full h-full p-2">
           <Departments/>
           <RatingSearchBar/>
         </div>

@@ -30,7 +30,7 @@ export default function BookmarksPage() {
             {bookmark.length === 0 ? (
                 <p>No bookmarks found.</p>
             ) : (
-                <ul className="list-disc pl-6">
+                <ul className="list-disc sm:pl-6">
                     {bookmark.map((item:any) => (
                         <BookmarkCard user={item} key={item.id}/>
                     ))}

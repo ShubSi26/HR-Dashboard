@@ -38,19 +38,19 @@ export default function Departments(){
     return (
         <div className="h-full w-full">
             <h1 className="text-2xl font-bold text-white">Departments</h1>
-            <div className="flex flex-col gap-4 mt-4 h-full w-full">
+            <div className="flex flex-wrap sm:flex-col gap-2 sm:gap-4 mt-2 sm:mt-4 h-full w-full">
                 {department.map((item, index) => (
                     <div
                         
                         key={index}
                         className={clsx(
-                            "p-4 w-full rounded-lg shadow-md cursor-pointer flex justify-between items-center",
+                            "p-4 sm:w-full rounded-lg shadow-md cursor-pointer flex justify-between items-center",
                             cilcked.includes(item) ? "bg-white text-black" : "bg-slate-900 text-white"
                         )}
                     >
                         <h2 onClick={() => setClicked([...cilcked, item])}
                             className={clsx(
-                                "text-xl font-semibold",
+                                "text-sm sm:text-xl  font-semibold",
                                 cilcked.includes(item) ? "text-black" : "text-white"
                             )}
                         >
