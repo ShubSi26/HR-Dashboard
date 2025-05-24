@@ -1,3 +1,8 @@
+# HR Dashboard
+![](https://raw.githubusercontent.com/ShubSi26/HR-Dashboard/refs/heads/main/images/dashboard.jpg)
+
+Demo link - https://hrdash.devshubh.live/
+
 # Setup Instruction
 
 Software Required - Node.js
@@ -38,3 +43,10 @@ npm run build
 
 - ## SSG for Analytics page
   Implemented static site generation for analytics page so on the build time, the page is fully generated and no delay in request.
+# More Images
+## Login Page
+![](https://raw.githubusercontent.com/ShubSi26/HR-Dashboard/refs/heads/main/images/login.jpg)
+## Bookmarks Page
+![](https://raw.githubusercontent.com/ShubSi26/HR-Dashboard/refs/heads/main/images/bookmarks.jpg)
+## Analytics Page
+![](https://raw.githubusercontent.com/ShubSi26/HR-Dashboard/refs/heads/main/images/chart.jpg)
