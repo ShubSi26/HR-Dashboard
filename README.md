@@ -1,7 +1,7 @@
 # HR Dashboard
 ![](https://raw.githubusercontent.com/ShubSi26/HR-Dashboard/refs/heads/main/images/dashboard.jpg)
 
-Demo link - https://hrdash.devshubh.live/
+Deployment link - https://hrdash.devshubh.live/
 
 # Setup Instruction
 
